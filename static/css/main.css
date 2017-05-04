@@ -1,0 +1,3681 @@
+/*==========================  mg-main start =========================================*/
+
+#mg-main {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*==========================  mg-header start =========================================*/
+
+#mg-header .top-bar {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background: #fbfbfb;
+    line-height: 24px;
+}
+
+#mg-header .top-content {
+    position: relative;
+    width: 1000px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+#mg-header .top-bar-logo {
+    width: 133px;
+    height: 44px;
+    display: block;
+    background: url("../images/header/logo.png");
+    margin-top: 5px;
+    float: left;
+}
+
+#mg-header .right-bar {
+    float: right;
+}
+
+#mg-header .right-bar div {
+    line-height: 55px;
+    float: left;
+    color: #333;
+    margin: auto 10px;
+    font-size: 12px;
+}
+
+#mg-header .right-bar a {
+    line-height: 55px;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    margin: auto 2px;
+    font-size: 12px;
+}
+
+#mg-header .right-bar a:hover {
+    background-color: #F3F3F3;
+    background-image: -webkit-linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    background-image: linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+}
+
+#mg-header em {
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#mg-header em i {
+    width: 9px;
+    height: 4px;
+    float: left;
+    margin: 6px 0 0 4px;
+    display: inline-block;
+    background: url("../images/sprite-head.png") no-repeat;
+    background-position: -103px -101px;
+}
+
+
+/*==================================game list start=========================*/
+
+#mg-header .game-table {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    display: none;
+    top: 55px;
+    background: #fdfefe;
+    border-top: 1px solid #ececec;
+    width: 1000px;
+    height: 450px;
+    opacity: 0.9;
+}
+
+#mg-header .game-title {
+    width: 1000px;
+    height: 39px;
+    position: relative;
+    background: #f7f7f8;
+    border-collapse: collapse;
+}
+
+#mg-header .game-title li {
+    display: inline-block;
+    line-height: 39px;
+    color: #bc2e2e;
+    font-size: 14px;
+    text-indent: 20px;
+    background: #f7f7f8;
+    overflow: hidden;
+    clear: both;
+    font-weight: bold;
+    border-right: 1px solid #eee;
+}
+
+#mg-header .game-title .title1 {
+    width: 247px;
+    height: 39px;
+}
+
+#mg-header .game-title .title2 {
+    width: 603px;
+    height: 39px;
+}
+
+#mg-header .game-title .title3 {
+    width: 140px;
+    height: 39px;
+}
+
+#mg-header .game-list {
+    width: 1000px;
+    border-right: 1px solid #eee;
+    float: left;
+    padding: 10px 0 0 14px;
+    overflow: hidden;
+    display: block;
+}
+
+#mg-header .game-list p {
+    padding: 0;
+    margin: 0;
+    margin-left: 6px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #626262;
+    font-size: 12px;
+}
+
+#mg-header .game-list li {
+    float: left;
+    border-right: 1px solid #eee;
+}
+
+#mg-header .game-list a {
+    width: 89px;
+    margin-left: 6px;
+    line-height: 24px;
+    float: left;
+    font-size: 12px;
+    color: #626262;
+}
+
+#mg-header .game-list .list1 {
+    height: 402px;
+    width: 234px;
+}
+
+#mg-header .game-list .list2 {
+    height: 402px;
+    width: 158px;
+}
+
+#mg-header .game-list .list3 {
+    height: 402px;
+    width: 431px;
+}
+
+#mg-header .game-list .list4 {
+    height: 402px;
+    width: 148px;
+}
+
+#mg-header #test:hover .game-table {
+    display: block;
+}
+
+
+/*==========================  mg-banner start =========================================*/
+
+#mg-banner .top-bar,
+#mg-top-bar .top-bar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    min-width: 1400px;
+    z-index: 20;
+}
+
+#mg-banner .changecolor {
+    background: #ffffff;
+    animation: changecolor 0.5s linear forwards;
+}
+
+@keyframes changecolor {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+#mg-banner .changecolorleave {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes tongrenenter {
+    from {
+        height: 0;
+    }
+    to {
+        height: 200px;
+    }
+}
+
+#mg-banner .tongrenleave {
+    animation: tongrenleave 0.5s linear forwards;
+}
+
+@keyframes tongrenleave {
+    from {
+        height: 200px;
+    }
+    to {
+        height: 0;
+    }
+}
+
+#mg-banner .content {
+    position: relative;
+    width: 100%;
+    height: 585px;
+    background: url("../images/banner/banner_background.jpg") top center no-repeat;
+}
+
+#mg-banner .top-list,
+#mg-top-bar .top-list {
+    padding-top: 35px;
+    margin-right: 15px;
+    float: right;
+}
+
+#mg-banner .top-list>li,
+#mg-top-bar .top-list>li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 118px;
+    height: 65px;
+    font-size: 16px;
+}
+
+#mg-banner .top-list li span,
+#mg-top-bar .top-list li span {
+    background-position: -1484px -746px;
+    ;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 15px;
+    height: 24px;
+}
+
+#mg-banner .shenle,
+#mg-top-bar .shenle {
+    background: url("../images/banner/shenle.png") no-repeat;
+    position: absolute;
+    width: 815px;
+    height: 800px;
+    left: 50%;
+    margin-left: -344px;
+    animation: .8s .1s shenle-up linear 1 forwards;
+}
+
+#mg-banner .qingming,
+#mg-top-bar .qingming {
+    background: url("../images/banner/qingming.png") no-repeat;
+    position: absolute;
+    width: 700px;
+    height: 781px;
+    left: 50%;
+    margin-left: -250px;
+    top: 222px;
+    animation: 1.2s .1s qingming-up linear 1 forwards;
+}
+
+#mg-banner .yys-logo {
+    background: url("../images/banner/logo.png") no-repeat;
+    width: 70px;
+    height: 200px;
+    position: absolute;
+    left: 45px;
+    top: 35px;
+    animation: .8s .1s logo-right linear 1 forwards;
+}
+
+#mg-banner .yys-slogon {
+    background: url("../images/banner/slogon.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 65px;
+    margin-left: -530px;
+    width: 171px;
+    height: 450px;
+    animation: .8s .1s slogon-top linear 1 forwards;
+}
+
+#mg-banner .bunny {
+    position: absolute;
+    left: 50%;
+    margin-left: -535px;
+    top: 467px;
+}
+
+#mg-banner .bunny img {
+    width: 102px;
+}
+
+#mg-banner .download-wraper {
+    width: 390px;
+    height: 123px;
+    position: absolute;
+    top: 462px;
+    left: 50%;
+    margin-left: -148px;
+    background: #fccc00;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 7px 4px #feeb00 inset;
+}
+
+#mg-banner .download-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#mg-banner .download-leave {
+    animation: download-leave 0.5s linear forwards;
+}
+
+@keyframes download-leave {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(348px)
+    }
+}
+
+#mg-banner .download-enter {
+    animation: download-enter 0.5s linear forwards;
+}
+
+@keyframes download-enter {
+    from {
+        transform: translateX(348px);
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
+
+#mg-banner .download-bar {
+    background-position: -1482px -969px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#mg-banner .download-text {
+    background-position: -1200px -100px;
+    width: 45px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+
+#mg-banner .qrcode {
+    width: 107px;
+    height: 107px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    left: 98px;
+    top: 10px;
+}
+
+#mg-banner .qrcode-img {
+    width: 91px;
+    position: absolute;
+}
+
+#mg-banner .qrcode-line {
+    left: -1px;
+    position: absolute;
+    width: 105px;
+    animation: roll 3s linear infinite;
+}
+
+@keyframes roll {
+    from {
+        top: 6px;
+    }
+    to {
+        top: 92px;
+    }
+}
+
+#mg-banner .button-ios {
+    position: absolute;
+    background-position: -1200px -1096px;
+    display: block;
+    margin-bottom: 5px;
+    width: 171px;
+    height: 51px;
+    top: 9px;
+    left: 211px;
+}
+
+#mg-banner .button-ios:hover {
+    background-position: -127px -302px;
+}
+
+#mg-banner .button-andorid {
+    position: absolute;
+    background-position: -626px -1240px;
+    display: block;
+    width: 171px;
+    height: 51px;
+    top: 68px;
+    left: 211px;
+}
+
+#mg-banner .button-andorid:hover {
+    background-position: -797px -1240px;
+}
+
+#fold_wrap {
+    height: 123px;
+    display: none;
+    min-width: 1400px;
+}
+
+#fold_wrap>a {
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    background-position: -1177px -148px;
+    display: block;
+    height: 105px;
+    width: 22px;
+}
+
+#mg-banner .tongren .more-show,
+#mg-top-bar .tongren .more-show {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    background: #e1ebeb;
+    left: -1150px;
+    top: 100%;
+    min-width: 1400px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+#mg-banner .guanfang .more-show,
+#mg-top-bar .guanfang .more-show {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    background: #e1ebeb;
+    left: -1267px;
+    top: 100%;
+    min-width: 1400px;
+    transition: height 0.3s linear;
+    overflow: hidden;
+}
+
+.tongren .cos-box {
+    float: right;
+    width: 215px;
+    height: 104px;
+    border-left: 1px solid #c8d0d0;
+    position: relative;
+    margin-right: 2%;
+    top: 35px;
+}
+
+.tongren .cos-box1 {
+    border-left: none;
+}
+
+.tongren .cos-inner {
+    transition: all .5s ease;
+    display: block;
+    position: relative;
+}
+
+.tongren .cos-pic {
+    display: block;
+    width: 65px;
+    height: 71px;
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -1438px -375px;
+    position: relative;
+    left: 73px;
+}
+
+.tongren .cos-text {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 20px;
+    position: relative;
+}
+
+.guanfang .qq-team {
+    float: right;
+    width: 380px;
+    height: 125px;
+    padding-left: 26px;
+    border-left: 1px solid #c8d0d0;
+    position: relative;
+    margin-right: 2%;
+    top: 35px;
+}
+
+.guanfang .qq-team2 {
+    width: 100px;
+}
+
+.guanfang .qq-team .qq {
+    float: left;
+    color: #666;
+    font-size: 12px;
+    width: 280px;
+    line-height: 25px;
+}
+
+.guanfang .qq-team .qq li {
+    float: left;
+    margin-right: 30px;
+}
+
+.guanfang .qq-team img {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+}
+
+#mg-banner .tongren:hover .more-show,
+#mg-top-bar .tongren:hover .more-show {
+    height: 200px;
+}
+
+#mg-banner .guanfang:hover .more-show,
+#mg-top-bar .guanfang:hover .more-show {
+    height: 200px;
+}
+
+
+/*==========================头部动画start =========================================*/
+
+@keyframes logo-right {
+    0% {
+        left: -100px;
+        opacity: 0;
+    }
+    100% {
+        left: 45px;
+        opacity: 1;
+    }
+}
+
+@keyframes slogon-top {
+    0% {
+        top: -400px;
+        opacity: 0;
+    }
+    100% {
+        top: 65px;
+        opacity: 1;
+    }
+}
+
+@keyframes shenle-up {
+    0% {
+        top: 222px
+    }
+    100% {
+        top: 0
+    }
+}
+
+@keyframes qingming-up {
+    0% {
+        top: 222px;
+        opacity: 0;
+    }
+    100% {
+        top: 40px;
+        opacity: 1;
+    }
+}
+
+
+/*==========================头部动画end =========================================*/
+
+
+/*==============================青蛙效果start====================================*/
+
+.server_pop_container {
+    height: 588px;
+    width: 1068px;
+    padding: 35px 0 0 50px;
+    position: absolute;
+    top: 100px;
+    left: 283px;
+}
+
+.server_pop_container .pop_title {
+    background-position: 0 0;
+    float: right;
+    width: 127px;
+    height: 362px;
+    margin-right: -8px;
+    background-repeat: no-repeat;
+}
+
+.bunny .bunny-bg {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10000;
+}
+#mg-course .course-search .bunny-bg {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.server_pop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -826px;
+    right: 0;
+    margin-top: -370px;
+    bottom: 0;
+    background: url("../images/banner/pop_bg.png") no-repeat;
+}
+
+.server_pop_container .ios_area,
+.server_pop_container .netease_area,
+.server_pop_container .android_area {
+    width: 246px;
+    float: left;
+}
+
+.server_pop_container .area_title {
+    position: relative;
+}
+
+.server_pop_container .area_title .name {
+    color: #000;
+    line-height: 32px;
+    border-bottom: 1px dotted #333;
+    font-size: 14px;
+}
+
+.close {
+    background-position: -1440px -1016px;
+    position: absolute;
+    top: 103px;
+    left: 1362px;
+    display: block;
+    height: 33px;
+    width: 33px;
+    z-index: 99999;
+}
+
+.close:hover {
+    animation: rotate-close 0.3s linear;
+}
+
+@keyframes rotate-close {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.server_pop_enter {
+    transform-origin: 10% 80%;
+    animation: server_pop_enter 0.5s linear forwards;
+}
+
+@keyframes server_pop_enter {
+    from {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.server_pop_leave {
+    transform-origin: 10% 80%;
+    animation: server_pop_leave 0.5s linear forwards;
+}
+
+@keyframes server_pop_leave {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.server_pop_container .square_icon {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    bottom: -2px;
+    left: 1px;
+    background: #333;
+}
+
+.server_pop_container .area_list {
+    height: 485px;
+    padding-left: 19px;
+    margin-left: 4px;
+    padding-top: 10px;
+    border-left: 1px solid #c3c3c3;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.server_pop_container .server_item {
+    float: left;
+    width: 85px;
+    height: 90px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.server_pop_container .server_item .icon.gzf {
+    background-position: -641px -1147px;
+}
+
+.server_pop_container .server_item .icon.lzj {
+    background-position: -1360px -1016px;
+}
+
+.server_pop_container .server_item .icon.qzy {
+    background-position: -881px -746px;
+}
+
+.server_pop_container .server_item .icon.czy {
+    background-position: -1280px -936px;
+}
+
+.server_pop_container .server_item .icon.xzc {
+    background-position: -1200px -936px;
+}
+
+.server_pop_container .server_item .icon.yzy {
+    background-position: -1360px -856px;
+}
+
+.server_pop_container .server_item .icon.zzy {
+    background-position: -1360px -1016px;
+}
+
+.server_pop_container .server_item .icon.szc {
+    background-position: -1360px -1016px;
+}
+
+.server_pop_container .server_item .icon.lzy {
+    background-position: -1360px -1016px;
+}
+
+.server_pop_container .server_item .icon.yze {
+    background-position: -1360px -1016px;
+}
+
+.server_pop_container .server_item>.sp {
+    background-position: -561px -1147px;
+}
+
+.server_pop_container .server_item .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.server_pop_container .square_icon {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    bottom: -2px;
+    left: 1px;
+    background: #333;
+    transform: rotate(45deg);
+}
+
+.server_pop_container .server_item .server_name {
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+}
+
+.server_pop_container .other_area {
+    float: left;
+    width: 130px;
+}
+
+.server_pop_container .server_item em {
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    display: block;
+    width: 26px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.announce_btn {
+    position: absolute;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #c9b27c;
+    border-radius: 5px;
+    right: 43px;
+    bottom: 188px;
+}
+
+.serverpop_code_wrap {
+    background-position: -696px -189px;
+    position: absolute;
+    width: 256px;
+    height: 177px;
+    bottom: 0;
+    right: -127px;
+    background-repeat: no-repeat;
+}
+
+
+/*==============================青蛙效果end====================================*/
+
+
+/*===================侧边栏==========================*/
+
+#mg-banner .side-bar {
+    position: absolute;
+    top: 419px;
+    left: 50%;
+    z-index: 10;
+    width: 707px;
+    height: 1181px;
+    margin-left: 242px;
+    background: url("../images/banner/side_bg.png") no-repeat left top;
+}
+
+#mg-banner .side-bar .title {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    z-index: 2;
+    width: 321px;
+    height: 168px;
+    background-position: -646px -371px;
+}
+
+#mg-banner .side-bar .list {
+    width: 346px;
+    padding-top: 146px;
+}
+
+#mg-banner .list .sp {
+    display: block;
+    width: 314px;
+    height: 103px;
+}
+
+#mg-banner .list .sp span {
+    display: block;
+    margin: 54px 0 0 15px;
+    color: #000;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+#mg-banner .side-bar .icon2 span {
+    margin: 45px 0 0 138px;
+}
+
+#mg-banner .side-bar .icon4 span {
+    margin: 53px 0 0 138px;
+}
+
+#mg-banner .side-bar .icon6 span {
+    margin: 46px 0 0 102px;
+}
+
+#mg-banner .side-bar .icon8 span {
+    margin: 40px 0 0 103px;
+}
+
+#mg-banner .side-bar .icon1 {
+    float: left;
+    margin-left: 28px;
+    margin-top: -16px;
+    background-position: 0px -1044px;
+}
+
+#mg-banner .side-bar .icon2 {
+    width: 317px;
+    margin-top: -9px;
+    float: right;
+    margin-right: 28px;
+    background-position: -837px -899px;
+}
+
+#mg-banner .side-bar .icon3 {
+    float: left;
+    background-position: 0px -1147px;
+    width: 321px;
+    height: 93px;
+    margin-top: -7px;
+    margin-left: 28px;
+}
+
+#mg-banner .side-bar .icon4 {
+    background-position: -331px -899px;
+    width: 309px;
+    height: 108px;
+    margin-top: -13px;
+    margin-bottom: -7px;
+    float: right;
+    margin-right: 28px;
+}
+
+#mg-banner .side-bar .icon5 {
+    background-position: -1200px 0px;
+    margin-bottom: -9px;
+    margin-top: -5px;
+    width: 312px;
+    height: 100px;
+    float: left;
+    margin-left: 28px;
+}
+
+#mg-banner .side-bar .icon6 {
+    background-position: -631px -1044px;
+    width: 312px;
+    height: 108px;
+    float: right;
+    margin-right: 28px;
+}
+
+#mg-banner .side-bar .icon7 {
+    background-position: 0px -899px;
+    width: 331px;
+    height: 145px;
+    margin-top: -21px;
+    margin-bottom: -60px;
+    position: relative;
+    float: left;
+    margin-left: 28px;
+}
+
+
+/*御魂副本下拉效果@王星宇*/
+
+#mg-banner .side-bar .icon7:hover .icon7-drop {
+    visibility: visible;
+    height: 302px;
+}
+
+#mg-banner .side-bar .icon7-drop {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    visibility: hidden;
+    width: 100%;
+    height: 0px;
+    margin-top: -21px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-position: -127px 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+#mg-banner .list .sp .drop-icon {
+    margin: 59px 0 0 15px;
+}
+
+#mg-banner .side-bar .yuhun_con {
+    margin: 30px 0 0 17px;
+}
+
+#mg-banner .side-bar .yuhun_con span {
+    display: block;
+    margin: 8px 0;
+    color: #000;
+    font-size: 13px;
+}
+
+#mg-banner .side-bar .icon7:hover .icon7-drop {
+    visibility: visible;
+    height: 302px;
+    transition: 0.5s height linear;
+}
+
+#mg-banner .side-bar .icon8 {
+    background-position: -314px -1044px;
+    width: 317px;
+    height: 102px;
+    margin-top: 8px;
+    float: right;
+    margin-right: 28px;
+}
+
+#mg-banner .side-bar .icon9 {
+    background-position: -744px -899px;
+    margin-top: -5px;
+    width: 93px;
+    height: 104px;
+    float: left;
+    margin-left: 28px;
+}
+
+#mg-banner .side-bar .icon10 {
+    background-position: -551px -208px;
+    margin-top: -5px;
+    margin-left: 7px;
+    width: 93px;
+    height: 104px;
+    float: left;
+}
+
+#mg-banner .side-bar .icon11 {
+    background-position: -458px -208px;
+    margin-top: -5px;
+    margin-left: 7px;
+    width: 93px;
+    height: 104px;
+    float: left;
+}
+
+
+/*==========================  mg-news start  =========================================*/
+
+#mg-news {
+    position: relative;
+    width: 100%;
+    padding-bottom: 49px;
+    background: #fff;
+}
+
+
+/*区块内包裹容器*/
+
+#mg-news .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+/*轮播图部分*/
+
+#mg-news #point3-slide {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 270px;
+    margin-left: -106px;
+    margin-top: -32px;
+    display: inline-block;
+}
+
+
+/*新闻列表部分*/
+
+#mg-news .news-wrapper {
+    float: left;
+    width: 500px;
+    height: 270px;
+    margin-left: 39px;
+}
+
+#mg-news .news-wrapper .tab {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2px;
+}
+
+#mg-news .tab .item {
+    float: left;
+    position: relative;
+    width: 74px;
+    height: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#mg-news .tab span {
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 30px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+/*各标题雪碧图定位*/
+
+#mg-news .item1 span {
+    background-position: -1440px -746px;
+}
+
+#mg-news .item2 span {
+    background-position: -585px -312px;
+}
+
+#mg-news .item3 span {
+    background-position: -298px -302px;
+}
+
+#mg-news .item4 span {
+    background-position: -342px -302px;
+}
+
+#mg-news .item5 span {
+    background-position: -539px -312px;
+}
+
+#mg-news .tab i {
+    background-position: -1492px -696px;
+    position: absolute;
+    top: 6px;
+    right: -18px;
+    width: 17px;
+    height: 28px;
+}
+
+#mg-news .tab em {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    display: block;
+    width: 74px;
+    height: 33px;
+    border-radius: 20px;
+    background: #68d7fc;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+#mg-news .tab .item:hover em {
+    opacity: 1;
+}
+
+#mg-news .news-wrapper .list {
+    position: relative;
+    width: 500px;
+    height: 204px;
+    overflow: hidden;
+}
+
+#mg-news .list .list-pannel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+#mg-news .list li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px dotted #999;
+    color: #333;
+    font-size: 14px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#mg-news .list em {
+    float: right;
+    font-style: normal;
+    color: #bccddc;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+
+/*==========================  mg-role start  ==========================================*/
+
+#mg-role {
+    position: relative;
+    width: 100%;
+    height: 607px;
+    background: #fff url("../images/role/role-background.jpg") no-repeat bottom center;
+}
+
+
+/*导航条*/
+
+#mg-role .navbar {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+
+#mg-role .navbar .title {
+    float: left;
+    width: 130px;
+    height: 69px;
+    margin-top: 16px;
+    margin-right: 12px;
+    background-position: -1207px -1147px;
+}
+
+#mg-role .navbar .sep {
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    background-position: -1245px -196px;
+}
+
+#mg-role .navbar a {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 91px;
+    margin: 5px 8px 0;
+}
+
+#mg-role .navbar a span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#mg-role .navbar a em {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 0;
+    width: 96px;
+    height: 91px;
+    opacity: 0;
+    background-position: -1200px -200px;
+    transition: all .3s linear;
+}
+
+#mg-role .navbar a:hover em {
+    opacity: 1;
+    top: 0;
+}
+
+#mg-role input[type="radio"] {
+    display: none;
+}
+
+#mg-role label {
+    cursor: pointer;
+}
+
+#mg-role #em-rdo1:checked~div a.shishen em,
+#mg-role #em-rdo2:checked~div a.zhujue em {
+    opacity: 1;
+    top: 0;
+}
+
+#mg-role #em-rdo2:checked~div section.zhujue,
+#mg-role #em-rdo1:checked~div section.shishen {
+    opacity: 1;
+    z-index: 10;
+}
+
+
+/*主角Section样式*/
+
+#mg-role .zhujue-tabs {
+    float: left;
+    width: 150px;
+    padding-top: 20px;
+}
+
+#mg-role .zhujue-tabs label {
+    position: relative;
+    display: block;
+    width: 136px;
+    height: 35px;
+    border: 2px solid #fff;
+    transition: all .3s;
+    margin-bottom: 20px;
+}
+
+#mg-role .zhujue-tabs label:hover {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#mg-role .zhujue-tabs label:hover em {
+    opacity: 1;
+}
+
+#mg-role .zhujue-tabs span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#mg-role .zhujue-tabs em {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    position: absolute;
+    opacity: 0;
+    display: none\9;
+    top: 11px;
+    right: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #000;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+#mg-role .zhujue-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 809px;
+    opacity: 1;
+    transition: all .3s;
+}
+
+#mg-role .zhujue-list .zhujue-desc {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#mg-role .zhujue-list .zjpic {
+    float: left;
+    margin-top: -30px;
+    margin-right: 35px;
+}
+
+#mg-role .zhujue-list .zjinfo {
+    float: left;
+    width: 227px;
+    padding-top: 40px;
+}
+
+#mg-role .zjinfo span {
+    display: block;
+    margin-bottom: 10px;
+    width: 38px;
+    height: 23px;
+}
+
+#mg-role .zjinfo h3 {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    width: 227px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+#mg-role .zjinfo p {
+    width: 227px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px;
+    border-top: 1px solid #000;
+    margin-bottom: 19px;
+}
+
+#mg-role .zhujue-desc .one {
+    background-position: -431px -720px;
+}
+
+#mg-role .zhujue-desc .two {
+    background-position: -1473px -1016px;
+}
+
+#mg-role .zhujue-desc .three {
+    background-position: -469px -720px;
+}
+
+#mg-role .zhujue-desc .four {
+    background-position: -387px -302px;
+}
+
+
+/*切换界面控制样式*/
+
+
+/*#mg-role .zhujue-list input[type="radio"] {
+    display: block;
+}*/
+
+#mg-role #zhujue-list-rdo1:checked~div.zhujue-list>div:first-of-type,
+#mg-role #zhujue-list-rdo2:checked~div.zhujue-list>div:nth-of-type(2),
+#mg-role #zhujue-list-rdo3:checked~div.zhujue-list>div:nth-of-type(3),
+#mg-role #zhujue-list-rdo4:checked~div.zhujue-list>div:nth-of-type(4) {
+    opacity: 1;
+}
+
+#mg-role #zhujue-list-rdo1:checked~div.zhujue-tabs label:first-of-type,
+#mg-role #zhujue-list-rdo2:checked~div.zhujue-tabs label:nth-of-type(2),
+#mg-role #zhujue-list-rdo3:checked~div.zhujue-tabs label:nth-of-type(3),
+#mg-role #zhujue-list-rdo4:checked~div.zhujue-tabs label:nth-of-type(4) {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#mg-role #zhujue-list-rdo1:checked~div.zhujue-tabs label:first-of-type em,
+#mg-role #zhujue-list-rdo2:checked~div.zhujue-tabs label:nth-of-type(2) em,
+#mg-role #zhujue-list-rdo3:checked~div.zhujue-tabs label:nth-of-type(3) em,
+#mg-role #zhujue-list-rdo4:checked~div.zhujue-tabs label:nth-of-type(4) em {
+    opacity: 1;
+}
+
+
+/*式神Section样式*/
+
+
+/*#mg-role .shishen {
+    display: none;
+}*/
+
+#mg-role .navbar .shishen span {
+    background-position: -1122px -601px;
+    margin-top: 27px;
+    width: 70px;
+    height: 33px;
+}
+
+#mg-role .navbar .zhujue span {
+    background-position: -1440px -819px;
+    margin-top: 24px;
+    width: 64px;
+    height: 36px;
+}
+
+#mg-role .zhujue-desc .to-detail {
+    background-position: -1440px -776px;
+    display: block;
+    width: 55px;
+    height: 43px;
+}
+
+#mg-role .zhujue-desc .to-detail:hover {
+    opacity: .7;
+}
+
+#mg-role .role-container {
+    position: relative;
+    width: 1200px;
+    height: 304px;
+    margin: 0 auto;
+}
+
+#mg-role .role-container section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none\9;
+    z-index: 0;
+}
+
+
+/*式神-列表容器*/
+
+#mg-role .shishen .topbar {
+    width: 800px;
+    height: 50px;
+    margin-bottom: 33px;
+    border-bottom: 1px dotted #333;
+}
+
+#mg-role .role-container .shishen-tabs {
+    float: left;
+    padding-top: 14px;
+    margin-left: 10px;
+}
+
+#mg-role .shishen-tabs label:visited {
+    color: #cea441;
+}
+
+#mg-role .shishen-tabs label:hover {
+    color: #cea441;
+}
+
+#mg-role #tab-rdo1:checked~div.topbar label:nth-of-type(1),
+#mg-role #tab-rdo2:checked~div.topbar label:nth-of-type(2),
+#mg-role #tab-rdo3:checked~div.topbar label:nth-of-type(3),
+#mg-role #tab-rdo4:checked~div.topbar label:nth-of-type(4),
+#mg-role #tab-rdo5:checked~div.topbar label:nth-of-type(5) {
+    color: #cea441;
+}
+
+#mg-role .shishen .view {
+    display: block;
+    margin-top: 12px;
+    float: left;
+    width: 131px;
+    height: 29px;
+    background: url("../images/role/viewAll_btn.png") no-repeat;
+}
+
+#mg-role .shishen-tabs label {
+    float: left;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Microsoft JhengHei", 'Microsoft Yahei';
+    margin-right: 32px;
+}
+
+#mg-role .shishen .list-wrapper {
+    width: 782px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mg-role .shishen .shishen-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 0;
+    transition: height 1s ease;
+}
+
+#mg-role #tab-rdo1:checked~div.list-wrapper #shishen-list1,
+#mg-role #tab-rdo2:checked~div.list-wrapper #shishen-list2,
+#mg-role #tab-rdo3:checked~div.list-wrapper #shishen-list3,
+#mg-role #tab-rdo4:checked~div.list-wrapper #shishen-list4,
+#mg-role #tab-rdo5:checked~div.list-wrapper #shishen-list5 {
+    height: 100%;
+    z-index: 100;
+}
+
+#mg-role .shishen .list-wrapper ul {
+    float: left;
+    padding: 5px 24px 0 0;
+    width: 89px;
+    height: 202px;
+    border-right: 1px solid #95a7a4;
+    margin-right: 16px;
+    box-sizing: content-box;
+}
+
+#mg-role .shishen .shishen-list ul:last-of-type {
+    border-right: none;
+}
+
+#mg-role .shishen .list-wrapper li {
+    width: 89px;
+    height: 92px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+#mg-role .shishen .list-wrapper a {
+    background-position: -1348px -100px;
+    display: block;
+    width: 89px;
+    height: 92px;
+    position: relative;
+}
+
+#mg-role .shishen .list-wrapper a:hover .tb {
+    opacity: 1;
+}
+
+#mg-role .shishen .list-wrapper .tb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89px;
+    height: 92px;
+    background: url("../images/role/mask.png") repeat;
+    border-radius: 100%;
+    z-index: 2;
+    display: table;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#mg-role .shishen .list-wrapper .tr {
+    display: table-row;
+}
+
+#mg-role .shishen .list-wrapper .td {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#mg-role .shishen .list-wrapper em {
+    display: inline-block;
+    zoom: 1;
+    font-weight: 400;
+    font-style: normal;
+    width: 19px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#mg-role .shishen .list-wrapper img {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+
+/*==========================  mg-course start ============================;============*/
+
+#mg-course {
+    width: 100%;
+    height: 600px;
+    margin: -58px auto 0;
+    background: #fff;
+}
+
+
+/*内容包裹类*/
+
+.course-centent {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+/*左侧区域*/
+
+#mg-course .course-left {
+    position: relative;
+    top: 50px;
+    width: 374px;
+    height: 430px;
+    border: 2px solid #000;
+}
+
+#mg-course .course-search {
+    position: absolute;
+    width: 374px;
+    height: 40px;
+    margin-left: -5px;
+    left: 3px;
+    top: -58px;
+    border: 2px solid #000;
+}
+
+#mg-course .search-btn {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    right: -2px;
+    bottom: -2px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: -1440px -536px;
+}
+
+#mg-course .search-btn:hover {
+    background-position: -1440px -616px;
+}
+
+#mg-course .search-input {
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    line-height: 39px;
+    border: 0;
+    outline: medium;
+    left: 16px;
+    top: 1px;
+}
+
+
+/*两点轮播图 @王孟菲*/
+
+#mg-course #point2-slide {
+    position: relative;
+    width: 368px;
+    height: 262px;
+    margin-bottom: 13px;
+    margin-top: -30px;
+}
+
+#mg-course .course-nav {
+    display: inline-block;
+    width: 368px;
+    height: 150px;
+}
+
+#mg-course .course-nav a {
+    float: left;
+    padding-left: 32px;
+    height: 150px;
+    width: 90px;
+}
+
+.course-nav a span {
+    float: left;
+    display: block;
+    width: 24px;
+    height: 134px;
+    margin-right: 25px;
+}
+
+#mg-course .course1 {
+    background-position: -988px -148px;
+}
+
+#mg-course .course2 {
+    background-position: -1012px -148px;
+}
+
+#mg-course .course3 {
+    background-position: -1036px -148px;
+}
+
+#mg-course .course4 {
+    background-position: -1060px -148px;
+}
+
+#mg-course .course-nav a .line {
+    display: block;
+    width: 11px;
+    height: 150px;
+    margin: -2px 44px 44px 44px;
+    background-position: -952px -189px;
+}
+
+
+/*右侧区域*/
+
+#mg-course .course-right {
+    position: absolute;
+    width: 790px;
+    height: 430px;
+    margin-top: -400px;
+    margin-left: 410px;
+    background: #fff;
+}
+
+#mg-course .course-tabs {
+    position: relative;
+    width: 794px;
+    height: 110px;
+    border-bottom: 1px solid #cbcdcc;
+    margin-top: 30px;
+}
+
+#mg-course .tab-name {
+    float: left;
+    width: 134px;
+    height: 85px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: -1375px -200px;
+}
+
+.course-tabs label {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 91px;
+    margin: 5px 8px 0;
+}
+
+.course-tabs label span {
+    position: relative;
+    z-index: 2;
+    width: 68px;
+    height: 39px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#mg-course .course-tabs .sperate_dot {
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: -1245px -196px;
+}
+
+#mg-course .course-tabs label em {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 96px;
+    height: 91px;
+    opacity: 0;
+    background-position: -1200px -200px;
+    transition: all .3s ease;
+}
+
+#mg-course .course-tabs label:hover em {
+    opacity: 1;
+    top: 2px;
+}
+
+.course-tabs .xinshou span {
+    margin-top: 27px;
+    width: 68px;
+    height: 39px;
+    background-position: -1440px -897px;
+}
+
+.course-tabs .shishen span {
+    margin-top: 27px;
+    width: 71px;
+    height: 31px;
+    background-position: -1440px -936px;
+}
+
+.course-tabs .douji span {
+    margin-top: 24px;
+    width: 75px;
+    height: 38px;
+    background-position: -1371px -1096px;
+}
+
+.course-tabs .wanfa span {
+    margin-top: 29px;
+    width: 80px;
+    height: 31px;
+    background-position: -458px -312px;
+}
+
+#mg-course .sperate_dot {
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: -1245px -196px;
+}
+
+
+/*列表容器*/
+
+#mg-course .course-wrap {
+    position: absolute;
+    top: 100px;
+    width: 790px;
+    height: 320px;
+}
+
+#mg-course .course-list01,
+.course-list02,
+.course-list03,
+.course-list04 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+    background: #fff;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+.course-tabs input:nth-of-type(1):checked~.course-wrap .course-list01 {
+    -webkit-transition: .3s;
+    z-index: 3;
+    height: 300px;
+}
+
+.course-tabs input:nth-of-type(2):checked~.course-wrap .course-list02 {
+    -webkit-transition: .3s;
+    height: 300px;
+    z-index: 3;
+}
+
+.course-tabs input:nth-of-type(3):checked~.course-wrap .course-list03 {
+    -webkit-transition: .3s;
+    height: 300px;
+    z-index: 3;
+}
+
+.course-tabs input:nth-of-type(4):checked~.course-wrap .course-list04 {
+    -webkit-transition: .3s;
+    height: 300px;
+    z-index: 3;
+}
+
+.course-tabs input:nth-of-type(4):checked~label>em {
+    opacity: 1;
+}
+
+#mg-course .course-wrap ul {
+    float: left;
+    width: 830px;
+    height: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+#mg-course .course-wrap ul li {
+    float: left;
+    margin-right: 56px;
+    width: 342px;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-bottom: 1px dotted #333;
+}
+
+#mg-course .course-wrap ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.course-wrap ul li p {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+}
+
+.course-list01 ul li a:hover p,
+.course-list02 ul li a:hover p,
+.course-list03 ul li a:hover p,
+.course-list04 ul li a:hover p {
+    color: #c1831c;
+}
+
+.course-wrap ul li p i {
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #333;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.course-wrap ul li p span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.course-wrap ul li em {
+    font-size: 14px;
+    color: #b2afaf;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*========================== mg-relation start ======================================*/
+
+#mg-relation {
+    /*position: relative;*/
+    width: 100%;
+    height: 610px;
+    margin: 0 auto;
+    margin-top: -25px;
+    background-color: #fff;
+    z-index: 2;
+    top: 60px;
+}
+
+#mg-relation .relation-wrap {
+    width: 1220px;
+    height: 600px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#mg-relation .relation-topbar {
+    position: absolute;
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+    top: 20px;
+    background: #fff;
+}
+
+
+/*同人导航栏*/
+
+#mg-relation .relation-topbar {
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+#mg-relation .relation-topbar .relation-title {
+    float: left;
+    width: 112px;
+    height: 106px;
+    margin-top: -19px;
+    margin-right: 24px;
+    background-image: url("../images/sprite.png");
+    background-position: -973px -643px;
+    background-repeat: no-repeat;
+}
+
+#mg-relation .relation-topbar .relation-tabs {
+    position: relative;
+    width: 1062px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#mg-relation .relation-topbar .relation-tabs li {
+    float: left;
+    width: 155px;
+    height: 75px;
+    border-bottom: 2px solid #000;
+}
+
+#mg-relation .relation-tabs li a {
+    position: absolute;
+    display: block;
+    width: 155px;
+    height: 58px;
+    border-left: 1px dotted #000;
+}
+
+#mg-relation .relation-tabs .tongren1 {
+    border: 0;
+}
+
+#mg-relation .relation-tabs a span {
+    top: 18px;
+    height: 18px;
+}
+
+#mg-relation .relation-tabs a span,
+#mg-relation .relation_tabs a i {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+#mg-relation .relation-tabs a span em {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 72px;
+    background-image: url("../images/sprite.png");
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#mg-relation .relation-tabs .tongren1 em {
+    background-position: -1440px -674px;
+}
+
+#mg-relation .relation-tabs .tongren2 em {
+    background-position: -805px -539px;
+}
+
+#mg-relation .relation-tabs .tongren3 em {
+    background-position: -1440px -594px;
+    ;
+}
+
+#mg-relation .relation-tabs .tongren4 em {
+    background-position: -734px -539px;
+    width: 71px;
+}
+
+#mg-relation .relation-tabs .tongren5 em {
+    background-position: -1437px -173px;
+}
+
+#mg-relation .relation-tabs .tongren6 em {
+    background-position: -646px -539px;
+    width: 88px;
+}
+
+#mg-relation .relation-tabs a:hover span em {
+    -webkit-transform: translateY(-17px);
+    transform: translateY(-17px);
+}
+
+#mg-relation .relation-tabs a:hover i {
+    display: block;
+    position: relative;
+    width: 155px;
+    top: 22px;
+    height: 54px;
+}
+
+#mg-relation .relation-tabs .li-1 a:hover i {
+    background: url(../images/relation/header-hover.png);
+    background-position: 0 0;
+}
+
+#mg-relation .relation-tabs .li-2 a:hover i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -165px 0;
+}
+
+#mg-relation .relation-tabs .li-3 a:hover i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -314px 0;
+}
+
+#mg-relation .relation-tabs .li-4 a:hover i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -476px 0;
+}
+
+#mg-relation .relation-tabs .li-5 a:hover i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -625px 0;
+}
+
+#mg-relation .relation-tabs .li-6 a:hover i {
+    background: url("../images/relation/header-hover.png");
+    background-position: -924px 0;
+}
+
+#mg-relation .push {
+    background-image: url("../images/sprite.png");
+    background-position: -330px -720px;
+    top: 28px;
+    width: 101px;
+    height: 24px;
+    right: 0;
+    position: absolute;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    background-repeat: no-repeat;
+}
+
+#mg-relation .push:hover {
+    -webkit-transform: translate(15px);
+    -moz-transform: translate(15px);
+}
+
+
+/*同人专区图片展示区域 @石为平*/
+
+#mg-relation .relation-pics-wrap {
+    width: 100%;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.relation-wrap img {
+    width: 285px;
+    height: 160px;
+    float: left;
+    margin: 40px 25px;
+}
+
+#mg-relation .relation-tabs {
+    position: relative;
+    width: 1062px;
+    height: 100%;
+    /*float: left;*/
+    overflow: hidden;
+}
+
+.relation-list li {
+    display: inline-block;
+    margin: -18px;
+}
+
+.relation-list li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.relation-list li p {
+    line-height: 42px;
+    color: #666;
+    height: 42px;
+    font-size: 14px;
+}
+
+.relation-list li p span {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 26px;
+}
+
+#mg-relation .relation-pics-wrap .cover {
+    position: absolute;
+    top: 40px;
+    left: 26px;
+    width: 285px;
+    height: 160px;
+    opacity: 0;
+    transition: opacity .5s ease;
+    background: url("../images/relation/mask_6b7d844.png") repeat;
+}
+
+#mg-relation .relation-pics-wrap .cover em {
+    position: absolute;
+    width: 79px;
+    height: 93px;
+    left: 50%;
+    margin-left: -40px;
+    top: 50%;
+    margin-top: -46px;
+    background-position: -1269px -100px;
+    background-repeat: no-repeat;
+}
+
+#mg-relation .relation-pics-wrap a:hover .cover {
+    opacity: 1;
+}
+
+
+/*同人导航点击逻辑样式*/
+
+#mg-relation input {
+    display: none;
+}
+
+#mg-relation #rel-rdo1:checked~div.relation-topbar ul label:nth-of-type(1) em,
+#mg-relation #rel-rdo2:checked~div.relation-topbar ul label:nth-of-type(2) em,
+#mg-relation #rel-rdo3:checked~div.relation-topbar ul label:nth-of-type(3) em,
+#mg-relation #rel-rdo4:checked~div.relation-topbar ul label:nth-of-type(4) em,
+#mg-relation #rel-rdo5:checked~div.relation-topbar ul label:nth-of-type(5) em,
+#mg-relation #rel-rdo6:checked~div.relation-topbar ul label:nth-of-type(6) em {
+    transform: translateY(-17px);
+}
+
+#mg-relation #rel-rdo1:checked~div.relation-topbar ul label:nth-of-type(1) i,
+#mg-relation #rel-rdo2:checked~div.relation-topbar ul label:nth-of-type(2) i,
+#mg-relation #rel-rdo3:checked~div.relation-topbar ul label:nth-of-type(3) i,
+#mg-relation #rel-rdo4:checked~div.relation-topbar ul label:nth-of-type(4) i,
+#mg-relation #rel-rdo5:checked~div.relation-topbar ul label:nth-of-type(5) i,
+#mg-relation #rel-rdo6:checked~div.relation-topbar ul label:nth-of-type(6) i {
+    display: block;
+    position: relative;
+    width: 155px;
+    top: 22px;
+    height: 54px;
+}
+
+#mg-relation #rel-rdo1:checked~div.relation-topbar ul label:nth-of-type(1) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: 0 0;
+}
+
+#mg-relation #rel-rdo2:checked~div.relation-topbar ul label:nth-of-type(2) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -165px 0;
+}
+
+#mg-relation #rel-rdo3:checked~div.relation-topbar ul label:nth-of-type(3) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -314px 0;
+}
+
+#mg-relation #rel-rdo4:checked~div.relation-topbar ul label:nth-of-type(4) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -476px 0;
+}
+
+#mg-relation #rel-rdo5:checked~div.relation-topbar ul label:nth-of-type(5) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -625px 0;
+}
+
+#mg-relation #rel-rdo6:checked~div.relation-topbar ul label:nth-of-type(6) i {
+    background: url(../images/relation/header-hover.png);
+    background-position: -924px 0;
+}
+
+
+/*========================== mg-media start =========================================*/
+
+#mg-media {
+    width: 100%;
+    height: 514px;
+    background: url('../images/media/bg.jpg') no-repeat;
+}
+
+#mg-media>.container {
+    padding-top: 58px;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+/*左侧内容*/
+
+#mg-media .content-left {
+    float: left;
+    height: 430px;
+    width: 580px;
+}
+
+#mg-media .content-left li {
+    float: left;
+    padding: 0 20px 15px 0;
+    height: 215px;
+    width: 290px;
+}
+
+#mg-media .left-item2 div,
+#mg-media .left-item3 div,
+#mg-media .left-item4 div {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+#mg-media .content-left .sp {
+    background-position: -973px 0;
+    height: 148px;
+    width: 227px;
+}
+
+#mg-media .content-left p {
+    margin-top: -4px;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 12px;
+}
+
+#mg-media .content-left a:link {
+    color: #000000;
+}
+
+
+/*右侧内容*/
+
+#mg-media .content-right {
+    float: right;
+    height: 430px;
+    width: 580px;
+}
+
+#mg-media .content-right li {
+    float: left;
+    padding: 0 0 15px 20px;
+    height: 215px;
+    width: 290px;
+}
+
+#mg-media .content-right div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#mg-media .content-right .sp {
+    background-position: -549px -746px;
+    height: 148px;
+    width: 227px;
+}
+
+#mg-media .content-right p {
+    margin-top: -4px;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 12px;
+}
+
+#mg-media .content-right a:link {
+    color: #666666;
+}
+
+#mg-media img {
+    transition: transform 0.4s linear;
+}
+
+
+/*动画*/
+
+#mg-media li div:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*========================== mg-activity start =====================================*/
+
+#mg-activity {
+    padding-top: 65px;
+    background-color: #fff;
+}
+
+#mg-activity .container {
+    width: 1270px;
+    height: 434px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#mg-activity a:link {
+    color: #fff;
+}
+
+#mg-activity .container a {
+    color: #ffffff;
+}
+
+
+/*左侧内容*/
+
+#mg-activity .content-left {
+    float: left;
+    margin-right: 37px;
+    width: 257px;
+    height: 370px;
+    background: url('../images/activity/content-left.png');
+}
+
+
+/*右侧内容*/
+
+#mg-activity .content-right {
+    float: left;
+    width: 965px;
+    height: 380px;
+}
+
+#mg-activity .content-right li {
+    float: left;
+    width: 320px;
+    height: 190px;
+    padding: 0 25px 37px;
+}
+
+#mg-activity .content-right div {
+    position: relative;
+    width: 270px;
+    height: 153px;
+    overflow: hidden;
+}
+
+#mg-activity .content-right p {
+    padding: 6px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border: 1px solid #fff;
+}
+
+#mg-activity img {
+    transition: transform 0.3s linear;
+}
+
+#mg-activity img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/*========================== mg-contact start @王星宇 ======================================*/
+
+#mg-contact {
+    background-color: #fff;
+}
+
+#mg-contact .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 74px;
+}
+
+#mg-contact .left {
+    float: left;
+    margin-right: 105px;
+}
+
+#mg-contact .main {
+    float: left;
+}
+
+
+/*二维码推广部分*/
+
+#mg-contact .qrcode-wrapper {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 200px;
+    margin-right: 117px;
+    padding-top: 20px;
+    background: #f6f6f6;
+}
+
+#mg-contact .qrcode-wrapper .text {
+    margin-left: 30px;
+}
+
+#mg-contact .qrcode-wrapper .text p {
+    float: left;
+    width: 27px;
+    line-height: 17px;
+}
+
+#mg-contact .qrcode-wrapper .text .qrcode-title {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 96px;
+    margin-top: 2px;
+    background-repeat: no-repeat;
+    background-position: -1245px -100px;
+}
+
+#mg-contact .qrcode-wrapper .qrcode {
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    width: 162px;
+    height: 162px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#mg-contact .qrcode-wrapper .qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+#mg-contact .qrcode-wrapper .line {
+    position: absolute;
+    bottom: 40px;
+    left: 33px;
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+}
+
+#mg-contact .qrcode-wrapper .name,
+#mg-contact .qrcode-wrapper .wechat {
+    position: absolute;
+    bottom: 15px;
+    left: 33px;
+    font-size: 14px;
+    color: #000;
+}
+
+#mg-contact .qrcode-wrapper .name span,
+#mg-contact .qrcode-wrapper .wechat span {
+    color: #d2c199;
+}
+
+
+/*客服部分*/
+
+#mg-contact .right {
+    position: relative;
+    float: left;
+    width: 225px;
+    height: 185px;
+    padding-top: 95px;
+}
+
+#mg-contact .right .customer {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 111px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: -1072px -415px;
+}
+
+#mg-contact .right .tel-title {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#mg-contact .right .tel {
+    margin-bottom: 24px;
+    font-family: Georgia, "Microsoft Yahei";
+    font-size: 20px;
+}
+
+#mg-contact .right .line {
+    display: block;
+    width: 52px;
+    height: 2px;
+    margin-bottom: 4px;
+    background: #d1d1d1;
+}
+
+#mg-contact .right .feedback {
+    display: block;
+    font-size: 12px;
+    color: #c9b27c;
+}
+
+#mg-contact .right .feedback:hover {
+    text-decoration: underline;
+}
+
+
+/*回到顶部*/
+
+#mg-contact .to-top {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    width: 25px;
+    height: 111px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+    background-repeat: no-repeat;
+    background-position: -1047px -415px;
+}
+
+
+/*========================== mg-footer start @王星宇========================================*/
+
+#mg-footer {
+    position: relative;
+    max-width: 1920px;
+    height: 724px;
+    margin: 0 auto;
+    padding-top: 130px;
+    background: #fff url("../images/footer/background.jpg") top center no-repeat;
+}
+
+#mg-footer p {
+    display: block;
+    width: 626px;
+    height: 62px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0px -1240px;
+}
+
+
+/*去往下载二维码部分*/
+
+#mg-footer .qrcode-download {
+    display: block;
+    width: 330px;
+    height: 332px;
+    margin: 0 auto;
+}
+
+#mg-footer .qrcode-download:hover .door {
+    top: 385px;
+}
+
+#mg-footer .qrcode-download:hover .text {
+    opacity: 0;
+}
+
+#mg-footer .qrcode-download:hover .bar {
+    top: 180px;
+}
+
+#mg-footer .qrcode-download:hover .qrcode-wrapper {
+    top: 200px;
+    opacity: 1;
+}
+
+#mg-footer .qrcode-download .text {
+    position: absolute;
+    top: 195px;
+    left: 50%;
+    z-index: 10;
+    display: block;
+    width: 166px;
+    height: 73px;
+    margin-left: -83px;
+    background-position: -961px -1147px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#mg-footer .qrcode-download .bar {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    z-index: 20;
+    display: block;
+    width: 74px;
+    height: 118px;
+    margin-left: -40px;
+    background-repeat: no-repeat;
+    background-position: -973px -415px;
+    transition: all 0.7s ease;
+}
+
+#mg-footer .qrcode-download .qrcode-wrapper {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    z-index: 30;
+    display: none\9;
+    width: 152px;
+    height: 152px;
+    margin-left: -76px;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translate3d(0, 30px, 0);
+    -moz-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+}
+
+#mg-footer .qrcode-download .qrcode-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#mg-footer .qrcode-download .qrcode-wrapper p {
+    position: absolute;
+    top: -10px;
+    right: -45px;
+    width: 50px;
+    height: 182px;
+    background-position: -646px -189px;
+    background-repeat: no-repeat;
+}
+
+#mg-footer .qrcode-download .door {
+    position: absolute;
+    top: 344px;
+    left: 50%;
+    z-index: 40;
+    display: block;
+    width: 188px;
+    height: 208px;
+    margin-left: -94px;
+    background-position: -458px 0px;
+    background-repeat: no-repeat;
+    transition: top 1s;
+}
+
+
+/*分享部分*/
+
+#mg-footer .share {
+    position: relative;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #82a0b8;
+    font-size: 12px;
+    text-align: center;
+    background: #c3d8e2;
+}
+
+#mg-footer .share .inner {
+    width: 460px;
+    margin: 0 auto;
+}
+
+#mg-footer .share .share-to {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+#mg-footer .share ul,
+#mg-footer .share ul li {
+    float: left;
+}
+
+#mg-footer .share ul li a {
+    display: block;
+}
+
+#mg-footer .share .wechat span,
+#mg-footer .share .yixin span,
+#mg-footer .share .weibo span,
+#mg-footer .share .qq span {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mg-footer .share .wechat span {
+    background: url("../images/footer/wechat.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .wechat a:hover span {
+    background: url("../images/footer/wechat_light.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .yixin span {
+    background: url("../images/footer/yixin.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .yixin a:hover span {
+    background: url("../images/footer/yixin_light.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .weibo span {
+    background: url("../images/footer/weibo.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .weibo a:hover span {
+    background: url("../images/footer/weibo_light.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .qq span {
+    background: url("../images/footer/qq.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .qq a:hover span {
+    background: url("../images/footer/qq_light.svg") no-repeat top left;
+    background-size: 20px 20px;
+}
+
+#mg-footer .share .wechat em,
+#mg-footer .share .yixin em,
+#mg-footer .share .weibo em,
+#mg-footer .share .qq em {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+    margin-right: 15px;
+    color: #82a0b8;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#mg-footer .share .wechat a:hover em,
+#mg-footer .share .yixin a:hover em,
+#mg-footer .share .weibo a:hover em,
+#mg-footer .share .qq a:hover em {
+    color: #c9b27c;
+}
+
+
+/*版权和责任说明部分、友情链接*/
+
+#mg-footer .corp-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    padding-bottom: 15px;
+    background: #c3d8e2;
+}
+
+#mg-footer .corp {
+    position: relative;
+    display: block;
+    width: 832px;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    font-size: 12px;
+    text-align: left;
+    font-family: '宋体';
+}
+
+#mg-footer .corp .logo-wrapper {
+    display: inline-block;
+}
+
+#mg-footer .corp .logo-netease {
+    display: inline-block;
+    width: 118px;
+    height: 31px;
+    padding-right: 0;
+    background: url("../images/footer/netease.png") no-repeat;
+    cursor: pointer;
+}
+
+#mg-footer .corp .logo-game {
+    display: inline-block;
+    width: 134px;
+    height: 31px;
+    padding-right: 15px;
+    background: url("../images/footer/game.png") no-repeat;
+    cursor: pointer;
+}
+
+#mg-footer .corp .shortcut {
+    display: inline-block;
+    padding-left: 6px;
+}
+
+#mg-footer .corp .gam-waring {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#mg-footer .corp a:hover {
+    text-decoration: underline;
+}
+
+#mg-footer .corp .custody {
+    position: absolute;
+    top: 38px;
+    right: 70px;
+    display: inline-block;
+    padding: 2px;
+    color: white;
+    background-color: rgb(97, 0, 0);
+}
+
+
+/*========================== mg-top-bar start ========================================*/
+
+#mg-top-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    opacity: 0.8;
+}
+
+#mg-top-bar .content-left {
+    float: left;
+    padding: 13px 0 0 15px;
+}
+
+#mg-top-bar .top-bar {
+    float: right;
+}
+
+#mg-top-bar .content-left>p {
+    margin: 3px 10px 0 0;
+    width: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+}
+
+#mg-top-bar .content-left img {
+    margin-right: 15px;
+    width: 74px;
+    height: 74px;
+    float: left;
+}
+
+#mg-top-bar .logo-wrap {
+    display: block;
+    float: left;
+    padding-left: 15px;
+    color: #000000;
+    border-left: 1px solid #ccc;
+}
+
+#mg-top-bar .game-name {
+    display: inline-block;
+    padding-left: 14px;
+    padding-top: 2px;
+}
+
+#mg-top-bar .logo-icon {
+    background-position: -1437px -100px;
+    width: 73px;
+    height: 73px;
+    display: block;
+    float: left;
+}
+
+#mg-top-bar .game-name h3 {
+    font-size: 32px;
+}
+
+#mg-top-bar .game-name p {
+    font-size: 16px;
+}
+
+.out {
+    -webkit-animation: out 0.5s ease;
+    -o-animation: out 0.5s ease;
+    animation: out 0.5s ease;
+}
+
+@keyframes out {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+.enter {
+    animation: enter 0.5s linear;
+}
+
+@keyframes enter {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.enter {
+    animation: enter 0.5s linear forwards;
+}
+
+@keyframes enter {
+    from {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.leave {
+    animation: leave 0.5s linear forwards;
+}
+
+@keyframes leave {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+
+/*===============动画部分   @王孟菲============================*/
+
+.header-nav {
+    transition: background ease-in-out .33s;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.header-nav a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #bc2e2e;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.header-nav a:hover:before,
+.header-nav a:focus:before,
+.header-nav a:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+/*图标上移的动画*/
+
+.up-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.up-float:hover,
+.up-float:focus,
+.up-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
+/*图标右移动画*/
+
+.right-float {
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+}
+
+.right-float:hover {
+    -webkit-transform: translate(15px);
+    -moz-transform: translate(15px);
+}
+
+
+/*图标下移动画*/
+
+.down-float {
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+}
+
+.down-float:hover {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+}
+
+
+/*==============================新闻tab页切换@王星宇==========================================*/
+
+
+/*新闻tab页*/
+
+#mg-news [type="radio"] {
+    display: none;
+}
+
+#mg-news input:nth-of-type(1):checked~.tab label:nth-child(1) em,
+#mg-news input:nth-of-type(2):checked~.tab label:nth-child(2) em,
+#mg-news input:nth-of-type(3):checked~.tab label:nth-child(3) em,
+#mg-news input:nth-of-type(4):checked~.tab label:nth-child(4) em,
+#mg-news input:nth-of-type(5):checked~.tab label:nth-child(5) em {
+    opacity: 1;
+}
+
+#mg-news input:nth-of-type(1):checked~.list #last,
+#mg-news input:nth-of-type(2):checked~.list #news,
+#mg-news input:nth-of-type(3):checked~.list #notice,
+#mg-news input:nth-of-type(4):checked~.list #event,
+#mg-news input:nth-of-type(5):checked~.list #media {
+    opacity: 1;
+    z-index: 100;
+}
+
+
+/*=====================轮播图动画效果设置 @王孟菲======================*/
+
+#point-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+
+/*对两点轮播图的设置*/
+
+#point-wrap1 {
+    position: relative;
+    width: 100%;
+    height: 228px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+
+/*对三点轮播图pic的设置*/
+
+#point3-slide #point3-slider {
+    width: 300%;
+    height: 100%;
+    margin-left: 0;
+    -webkit-animation: slide1 6s ease-out infinite;
+}
+
+
+/*对两点轮播图pic的设置*/
+
+#point2-slide #point2-slider {
+    width: 200%;
+    height: 100%;
+    margin-left: 0;
+    -webkit-animation: slide4 6s ease-out infinite;
+}
+
+
+/*对三点轮播图li的设置*/
+
+#point3-slide #point3-slider li {
+    float: left;
+    width: 360px;
+    height: 100%;
+}
+
+
+/*对两点轮播图li的设置*/
+
+#point2-slide #point2-slider li {
+    float: left;
+    width: 368px;
+    height: 100%;
+}
+
+
+/*三点轮播图要播放的pic*/
+
+#point3-slide #point3-slider li:nth-child(1) {
+    background: url("../images/news/pic1.jpg");
+}
+
+#point3-slide #point3-slider li:nth-child(2) {
+    background: url("../images/news/pic2.jpg");
+}
+
+#point3-slide #point3-slider li:nth-child(3) {
+    background: url("../images/news/pic3.jpg");
+}
+
+
+/*两点轮播图要播放的pic*/
+
+#point2-slide #point2-slider li:nth-child(1) {
+    background: url("../images/news/pic4.jpg");
+    background-repeat: no-repeat;
+}
+
+#point2-slide #point2-slider li:nth-child(2) {
+    background: url("../images/news/pic5.jpg");
+    background-repeat: no-repeat;
+}
+
+
+/*=========创建动画策略==============*/
+
+@-webkit-keyframes slide1 {
+    0% {
+        margin-left: 0;
+    }
+    23% {
+        margin-left: 0;
+    }
+    33% {
+        margin-left: -360px;
+    }
+    56% {
+        margin-left: -360px;
+    }
+    66% {
+        margin-left: -720px;
+    }
+    90% {
+        margin-left: -720px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slide2 {
+    0% {
+        margin-left: -360px;
+    }
+    23% {
+        margin-left: -360px;
+    }
+    33% {
+        margin-left: -720px;
+    }
+    56% {
+        margin-left: -720px;
+    }
+    66% {
+        margin-left: 0;
+    }
+    90% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -360px;
+    }
+}
+
+@-webkit-keyframes slide3 {
+    0% {
+        margin-left: -720px;
+    }
+    23% {
+        margin-left: -720px;
+    }
+    33% {
+        margin-left: 0;
+    }
+    56% {
+        margin-left: 0;
+    }
+    66% {
+        margin-left: -360px;
+    }
+    90% {
+        margin-left: -360px;
+    }
+    100% {
+        margin-left: -720px;
+    }
+}
+
+
+/*两点轮播图的动画策略*/
+
+@-webkit-keyframes slide4 {
+    0% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -368px;
+    }
+    90% {
+        margin-left: -368px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slide5 {
+    0% {
+        margin-left: -368px;
+    }
+    40% {
+        margin-left: -368px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    90% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -368px;
+    }
+}
+
+
+/*============修改动画名称=============*/
+
+#l01:checked~#point-wrap #point3-slider {
+    -webkit-animation-name: slide1;
+}
+
+#l02:checked~#point-wrap #point3-slider {
+    -webkit-animation-name: slide2;
+}
+
+#l03:checked~#point-wrap #point3-slider {
+    -webkit-animation-name: slide3;
+    /*opacity: 0;*/
+}
+
+
+/*两点轮播图修改动画名称*/
+
+#l04:checked~#point-wrap1 #point2-slider {
+    -webkit-animation-name: slide4;
+}
+
+#l05:checked~#point-wrap1 #point2-slider {
+    -webkit-animation-name: slide5;
+}
+
+
+/*=======短暂地取消动画名称，模拟重启动画=======*/
+
+#l01:active~#point-wrap #point3-slider {
+    -webkit-animation-name: none;
+    margin-left: 0;
+}
+
+#l02:active~#point-wrap #point3-slider {
+    -webkit-animation-name: none;
+    margin-left: -360px;
+}
+
+#l03:active~#point-wrap #point3-slider {
+    -webkit-animation-name: none;
+    margin-left: -720px;
+}
+
+
+/*对两点轮播图模拟重启动画*/
+
+#l04:active~#point-wrap1 #point2-slider {
+    -webkit-animation-name: none;
+    margin-left: 0;
+}
+
+#l05:active~#point-wrap1 #point2-slider {
+    -webkit-animation-name: none;
+    margin-left: -368px;
+}
+
+
+/*======设置轮播图下方的圆点==========*/
+
+#point3-slide #point-opts {
+    width: 60px;
+    height: 14px;
+    position: relative;
+    top: -52px;
+    left: 152px;
+}
+
+#point3-slide #point-opts label {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+    border: 3px solid #e37b63;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#point3-slide #point-opts label:hover {
+    background: #e37b63;
+}
+
+
+/*对两点轮播图下方圆点的设置*/
+
+#point2-slide #point-opts1 {
+    width: 60px;
+    height: 14px;
+    position: relative;
+    top: -11px;
+    left: 152px;
+}
+
+#point2-slide #point-opts1 label {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+    border: 3px solid #000;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#point2-slide #point-opts1 label:hover {
+    background: #000;
+}
+
+
+/*========隐藏Input按钮=======*/
+
+#l01,
+#l02,
+#l03,
+#l04,
+#l05 {
+    display: none;
+}

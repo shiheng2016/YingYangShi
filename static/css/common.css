@@ -1,0 +1,160 @@
+/*============================normalize.css start @王星宇==========================*/
+
+
+/*全局使用怪异盒子*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+hr,
+table,
+th,
+td,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+    font-weight: 700;
+}
+
+body {
+    position: relative;
+    background: #000;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button,
+label {
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+html,
+body {
+    min-width: 1400px;
+    font-family: 'Microsoft Yahei';
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #333;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+/*================================common.css start@王星宇=====================*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*雪碧图公共类引用*/
+
+.sp {
+    background: url("../images/sprite.png") no-repeat;
+}
+
+
+/*top-bar部分a*/
+
+#mg-header a:link,
+#mg-header a:visited {
+    color: #333;
+}
+
+#mg-header a:hover,
+#mg-header a:active {
+    color: #bc2e2e;
+}
+
+
+/*下拉菜单部分a*/
+
+#test .game-table ul li a:link,
+#test .game-table ul li a:visited {
+    color: #999;
+}
+
+#test .game-table ul li a:hover,
+#test .game-table ul li a:active {
+    color: #bc2e2e;
+}
+
+
+/*banner部分a*/
+
+#mg-banner a:link,
+#mg-banner a:visited,
+#mg-top-bar a:link,
+#mg-top-bar a:visited {
+    color: #333;
+}
+
+#mg-banner a:hover,
+#mg-banner a:active,
+#mg-top-bar a:hover,
+#mg-top-bar a:active {
+    color: #cc4336;
+}
+
+
+/*news-tab部分a*/
+
+#mg-news a:link,
+#mg-news a:visited {
+    color: #333;
+}
+
+#mg-news a:hover,
+#mg-news a:active {
+    color: #c1831c;
+}
